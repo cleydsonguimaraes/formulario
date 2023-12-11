@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="/estilo/style.css">
 </head>
 <body>
+    <header>
+        <h1>Formulário para revisão do IPTU Recife</h1>
+    </header>
     <main>
         <section>
             <div id="formulario">
-                <h1>Formulário para revisão do IPTU Recife</h1>
+                
                 <form action="" method="post">
                     <h2>Dados Pessoais</h2>
                     <div class="campo">
@@ -65,7 +68,7 @@
                         <label for="isequen">Número sequencial do imóvel:</label><br>
                         <p>O número sequencial do imóvel pode ser encontrado no carnê do IPTU na  posição abaixo:</p>
                         <div id="img">
-                        <!-- Aqui vai a img--> 
+                        <img src="/imagem/iptucel.jpg" alt="como localizar o sequencial">
                         </div>
                         <input type="text" name="sequen" id="isequen" pattern="\d" required>
                     </div>
@@ -129,10 +132,15 @@
                         <input type="text" name="feedback" id="ifeedback"
                         maxlength="500">
                        </div>
-                       <div class="campo">
-                        <input type="reset" value="Limpar Formulário">
-                        <input type="submit" value="Enviar">
-                       </div>
+                        <div class="botao">
+                            <div class="elementos">
+                                <input type="reset" value="Limpar Formulário">
+                            </div>
+
+                            <div class="elementos">
+                                 <input type="submit"value="Enviar">
+                            </div>
+                        </div>
                 </form>
             </div>
         </section>
