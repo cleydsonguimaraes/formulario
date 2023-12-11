@@ -54,8 +54,10 @@ div.campo {
     padding: 10px;
 }
 
-div#img > img {
+div#img {
     margin: 5px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 div.campo > fieldset {
