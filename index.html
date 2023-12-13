@@ -3,153 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTU Legal</title>
 
     <link rel="stylesheet" href="estilo/style.css">
 
-    <link rel="stylesheet" href="estilo/midiaquery.css">
-
-    <title>IPTU legal</title>
 </head>
 <body>
-    <header>
-        <h1>Formulário para revisão do IPTU Recife</h1>
-    </header>
     <main>
-        <section>
-            <div id="formulario">
-                
-                <form action="https://api.sheetmonkey.io/form/bFPrWD4drYbC55Mp8cMHha" method="post">
-                    <h2>Dados Pessoais</h2>
-                    <div class="campo">
-                        <label for="inome">Nome Completo:</label>
-                        <input type="text" name="nome" id="inome"
-                        autocomplete="name"
-                        required>
-                    </div>
-                    <div class="campo">
-                        <label for="iemail">E-mail para contato:</label>
-                        <input type="email" name="email" id="iemail"
-                        autocomplete="email"
-                        required>
-                    </div>
-                    <div class="campo">
-                        <label for="icemail">Confirme o E-mail:</label>
-                        <input type="email" name="email" id="icemail"
-                        autocomplete="email"
-                        required>
-                    </div>
-                    <h2>Endereço do Imóvel</h2>
-                    <div class="campo">
-                        <label for="1cep">CEP:</label>
-                        <input type="text" name="cep" id="icep" pattern="\d{8}"   minlength="8" maxlength="8"
-                        required>
-                    </div>
-                    <div class="campo">
-                        <label for="irua">Rua:</label>
-                        <input type="text" name="rua" id="irua" required >
-                    </div>
-                    <div class="campo">
-                        <label for="inum">Número:</label>
-                        <input type="text" name="num" id="inum" 
-                        required>
-                    </div>
-                    <div class="campo">
-                        <label for="icomp">Complemento:</label>
-                        <input type="text" name="comp" id="icomp" required
-                        >
-                    </div>
-                    <div class="campo">
-                        <label for="ibairro">Bairro:</label>
-                        <input type="text" name="bairro" id="ibairro" required
-                        >
-                    </div>
-                    <div class="campo">
-                        <label for="icidade">Cidade:</label>
-                        <input type="text" name="cidade" id="icidade" required>
-                    </div>
-                    <div class="campo">
-                        <label for="isequen">Número sequencial do imóvel:</label><br>
-                        <p>O número sequencial do imóvel pode ser encontrado no carnê do IPTU na  posição abaixo:</p>
-                        <div id="img">
-                        <picture>
-                            <source media="(max-width: 430px)" srcset="imagem/iptucel.jpg">
-                            <source media="(max-width: 890px)" srcset="imagem/iptutablet.jpg">
-                            <img src="imagem/iptu.jpg" alt="como localizar o sequencial">
-                        </picture>
-                        </div>
-                        <input type="text" name="sequen" id="isequen" required>
-                    </div>
-                    <h2>Detalhes do Imóvel</h2>
-                    <div class="campo">
-                       <fieldset >
-                        <legend>Natureza do Imóvel</legend>
-                        <input type="radio" name="imovel" id="iterreno" value="terreno">
-                        <label for="iterreno">Terreno</label><br>
-                        <input type="radio" name="imovel" id="iedif" value="Edificacao">
-                        <label for="iedif">Edificação</label>
-                       </fieldset>
-                    </div>
-                    <div class="campo">
-                        <label for="seedif">Se Edificação, infromar área apróximada  da construção</label><br>
-                        <input type="text" name="edif" id="seedif">
-                       </div>
-                       <div class="campo">
-                        <fieldset>
-                            <legend>Uso do Imóvel</legend>
-                            <input type="radio" name="uso" id="iresid" value="residencial">
-                            <label for="iresid">Residencial</label><br>
-                            <input type="radio" name="uso" id="inresid" value="naoresidencial">
-                            <label for="inresid">Não Residencial</label>
-                        </fieldset>
-                       </div>
-                       <div class="campo">
-                        <label for="senresid">Se Não Residencial, informar o n° cadastro prefeitura </label><br>
-                        <input type="text" name="ncadastro" id="senresid">
-                       </div>
-                       <div class="campo">
-                        <fieldset>
-                          <legend>Qual o valor do seu IPTU anual ?</legend>
-                            <input type="radio" name="valor" id="3m" value="3000">
-                            <label for="3m">Até R$ 3.000</label><br>
-                            <input type="radio" name="valor" id="3a5m" value="3000a5000">
-                            <label for="3a5m">De R$ 3.000 á R$ 5.000</label><br>
-                            <input type="radio" name="valor" id="5a10m" value="5000a10000">
-                            <label for="5a10m">De R$ 5.000 á R$ 10.000</label><br>
-                            <input type="radio" name="valor" id="ac10" value="acima10000">
-                            <label for="ac10">Acima de R$ 10.000</label>
-                        </fieldset>
-                       </div>
-                       <div class="campo">
-                        <label for="idadeim">Aproximadamente há quantos anos o imóvel existe ?
-                        </label><br>
-                        <input type="text" name="idadeimovel" id="idadeim">
-                       </div>
-                       <div class="campo">
-                        <fieldset>
-                            <legend>Tem notícia da realização de alguma vistoria a partir de 2016 até a presente data ?</legend>
-                            <input type="radio" name="2016" id="isim">
-                            <label for="isim">Sim</label><br>
-                            <input type="radio" name="2016" id="inao">
-                            <label for="inao">Não</label>
-                        </fieldset>
-                       </div>
-                       <div class="campo">
-                        <label for="ifeedback">Nos ajudaria muito se o(a) senhor(a) pudesse dar sua opinião sobre esse formulário. Críticas e sugestões serão muito bem vindas. Desde já agradecemos.</label><br>
-                        <input type="text" name="feedback" id="ifeedback"
-                        maxlength="500">
-                       </div>
-                        <div class="botao">
-                            <div class="elementos">
-                                <input type="reset" value="Limpar Formulário">
-                            </div>
-
-                            <div class="elementos">
-                                 <input type="submit"value="Enviar">
-                            </div>
-                        </div>
-                </form>
-            </div>
-        </section>
-    </main>
+      <div id="formulario">
+        <h2>Se você é de recife e quer saber se o IPTU está correto</h2>
+        <p><a href="formulario.html" target="_parent"><strong>Clique aqui!</strong></a></p>
+      </div>
+      <div id="conteudo">
+          <div class="subconteudo">
+              <h2>Quem somos</h2>
+          </div>
+          <div class="subconteudo">
+            <h2>Legislação</h2>
+          </div>
+          <div class="subconteudo">
+            <h2>Artigo</h2>
+          </div>
+      </div>
+    </main> 
 </body>
 </html>
